@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$family-sans-serif: 'Raleway', sans-serif;
+$family-primary: $family-sans-serif;
+
+$lm-yellow: #dcb266;
+$lm-green: #647e6a;
+$lm-darkg: #1c504c;
+$lm-peach: #c97254;
+$lm-brown: #a57859;
+
+$primary: $lm-yellow;
+$info: $lm-green;
+$dark: $lm-darkg;
+$danger: $lm-peach;
+$warning: $lm-brown;
+
+$navbar-background-color: $primary;
+$navbar-item-color: $info;
+$navbar-item-hover-color: $dark;
+$navbar-height: 4.5rem;
+
+$footer-background-color: $dark;
+.footer a {
+  color: $primary;
+}
+.footer a:hover {
+  color: $white;
+}
+
+@import "../node_modules/bulma/bulma";
+
+.lm-active {
+  color: $lm-darkg;
+}
+
+.lm-spacer {
+  height: 100px;
+}
+
+.lm-link {
+  color: $primary;
+}
+
+.lm-link:hover {
+  color: $white;
+}
